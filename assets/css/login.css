@@ -16,7 +16,6 @@ html, body {
     width: 400px;
     height: 310px;
     background-color: #fff;
-  
     position: absolute;
     left:50%;
     top:50%;
@@ -39,15 +38,27 @@ html, body {
     top: 10px;
 }
 
-.heads>h1{
+h1{
     width: 100%;
     text-align: center;
     height: 60px;
     line-height: 60px;
-    margin-bottom: 20px;
+   
 }
 
 .links{
     text-align: right;
     margin-top: 20px;
+}
+
+#heid{
+    width: 400px;
+    height: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 0 40px;
+    display:none;
 }

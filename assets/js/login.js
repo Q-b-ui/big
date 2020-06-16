@@ -47,11 +47,61 @@ $(function () {
       if(res.status==0){
         location.href='./index.html'
       }
-        
-      
-        
+         
       }
     });
    
   });
+
+
+    // 注册按钮点击事件
+    $('.links a').on('click',function(e){
+      // 阻止默认跳转
+      e.preventDefault();
+      $('#heid').show().prev().hide();
+   
+    })
+
+    $('#links a').on('click',function(e){
+      // 阻止默认跳转
+      e.preventDefault();
+      $('#heid').hide().prev().show();
+   
+    })
+
+
+
+     // 1.注册登录按钮点击事件
+  $("#btn-2").on("click", function (e) {
+    // 阻止默认跳转
+  
+    e.preventDefault()
+    // 2.获取用户输入的信息
+    var fd = $("#heid form").serialize();
+    console.log(fd);
+    
+    // 3.发送ajax请求
+    $.ajax({
+      type: "post",
+      url: "http://btapi.ehomespace.com/api/reguser",
+      data: fd,
+      success: function (res) {
+        console.log(res);
+        // alert(res.message)
+        layer.msg(res.message);
+    // 4.判断 如果请求成功 跳转首页
+      if(res.status==0){
+        $('#heid').hide().prev().show();
+      }
+         
+      }
+    });
+   
+  });
+
+
 });
+
+
+
+

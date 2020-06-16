@@ -17,6 +17,8 @@
 
     <script type="text/javascript" src="./assets/lib/layui/layui.all.js"></script>
 
+    
+
 
 
 </head>
@@ -26,7 +28,7 @@
     <div class="logos">
         <img src="./assets/images/logo.png" alt="">
     </div>
-    <!-- 表单模块 -->
+    <!-- 表单模块  登录-->
 
     <div class="heads">
         <!-- 标题 -->
@@ -53,6 +55,40 @@
                 <a href="">去注册账号</a>
             </div>
         </form>
+
+<!-- 注册页 -->
+<div  id="heid">
+    <!-- 标题 -->
+    <h1>
+        <img src="./assets/images/login_title.png" alt="">
+    </h1>
+    <!-- 表单 -->
+    <form class="layui-form" action="">
+        <!-- 用户名 -->
+        <div class="layui-form-item">
+            <i class="layui-icon layui-icon-username"></i>
+            <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名"
+                autocomplete="off" class="layui-input">
+        </div>
+        <!-- 密码框 -->
+        <div class="layui-form-item">
+            <i class="layui-icon layui-icon-password"></i>
+            <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
+                autocomplete="off" class="layui-input">
+
+        </div>
+          <!-- 密码框 -->
+          <div class="layui-form-item">
+            <i class="layui-icon layui-icon-password"></i>
+            <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
+                autocomplete="off" class="layui-input">
+
+        </div>
+        <button type="button" lay-submit class="layui-btn layui-btn-fluid layui-btn-normal" id="btn-2">登录</button>
+        <div class="links" id="links">
+            <a href="">已有账号去登录</a>
+        </div>
+    </form>
 
     </div>
 </body>
