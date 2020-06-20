@@ -43,7 +43,7 @@ $(function () {
     // 3.发送ajax请求
     $.ajax({
       type: "post",
-      url: "http://ajax.frontend.itheima.net/api/login",
+      url: "/api/login",
       data: fd,
       success: function (res) {
         console.log(res);
@@ -91,7 +91,7 @@ $(function () {
     // 3.发送ajax请求
     $.ajax({
       type: 'post',
-      url: 'http://ajax.frontend.itheima.net/api/reguser',
+      url: '/api/reguser',
       data: formData,
       success: function (backData) {
         console.log(backData);

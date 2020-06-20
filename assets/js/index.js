@@ -14,7 +14,7 @@ if(!mytoken){
 function lodaing(){
     $.ajax({
         type:'get',
-        url:'http://ajax.frontend.itheima.net/my/userinfo',
+        url:'/my/userinfo',
         headers:{
             // 凡是带my的请求，都需要设置请求头，携带登录成功的标志
             Authorization:localStorage.getItem('mytoken')
