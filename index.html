@@ -29,14 +29,16 @@
   
     <ul class="layui-nav layui-layout-right">
       <li class="layui-nav-item">
-        <a href="javascript:;">
-          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-          <span id="uname"></span>
-        </a>
+    <!-- 顶部欢迎语 -->
+    <a href="javascript:;" class="welcome-a">
+     
+      <!-- <img src="http://t.cn/RCzsdCq" class="layui-nav-img"> -->
+      <span><span id="uname"></span></span>
+    </a>
         <dl class="layui-nav-child">
-          <dd><a href="">基本资料</a></dd>
-          <dd><a href="">更换头像</a></dd>
-          <dd><a href="">重置密码</a></dd>
+          <dd><a target="iframe-href" href="./my/my-basics.html">基本资料</a></dd>
+          <dd><a target="iframe-href" href="./my/my-photo.html">更换头像</a></dd>
+          <dd><a target="iframe-href" href="./my/my-repwd.html">重置密码</a></dd>
         </dl>
       </li>
       <li class="layui-nav-item"><a href="javascript:;" id="quit-btn"><span class="iconfont icon-tuichu"></span>退出</a></li>
@@ -60,9 +62,9 @@
         <li class="layui-nav-item layui-nav-itemed">
           <a class="" href="javascript:;"><span class="iconfont icon-pinglun"></span>文章管理</a>
           <dl class="layui-nav-child">
-            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
-            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
-            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发表文章</a></dd>
+            <dd><a target="iframe-href" href="./article/article-sort.html"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
+            <dd><a target="iframe-href" href="./article/article-list.html"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+            <dd><a target="iframe-href" href="./article/article-publish.html"><i class="layui-icon layui-icon-app"></i>发表文章</a></dd>
             
           </dl>
         </li>

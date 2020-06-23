@@ -1,7 +1,7 @@
 // 通用接口调用设置
 $(function(){
 
-  // var baseURL = "http://ajax.frontend.itheima.net";
+  // var baseURL = "http://ajax.frontend.itheima.net";ccc
   var baseURL = "http://www.liulongbin.top:3007";
 
 $.ajaxPrefilter(function (option) {
@@ -23,7 +23,7 @@ $.ajaxPrefilter(function (option) {
 
   // 3.处理通用获取数据异常
   option.complete = function (res) {
-    console.log(res);
+  
     
     // 结束进度条()
     window.NProgress && window.NProgress.done();
